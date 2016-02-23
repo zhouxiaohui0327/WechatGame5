@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=no" />
+    <link rel="stylesheet" href="css/style.css"/>
+
+    <title>掀盖头 偷看女神</title>
+
+</head>
+<body>
+    <script type="text/javascript" src="cocos2d-js-v3.10-lite.js" charset="UTF-8"></script>
+    <canvas id="gameCanvas" width="429" height="643"></canvas>
+    <script type="text/javascript">
+
+          window.onload = function(){
+              cc.game.onStart = function(){
+                  var mode = cc.sys.isMobile && window.navigator.userAgent.indexOf("MicroMessenger") != -1 ? cc.ResolutionPolicy.EXACT_FIT : cc.sys.isMobile ? cc.ResolutionPolicy.EXACT_FIT : cc.ResolutionPolicy.SHOW_ALL;
+
+                  cc.view.setDesignResolutionSize(640,960,mode);
+                  cc.view.resizeWithBrowserSize(true);
+                  //load resources
+                  MyLoaderScene.preload(g_resources, function () {
+                      cc.director.runScene(new GameStart());
+                  }, this);
+              };
+              cc.game.run("gameCanvas");
+          };
+    </script>
+
+    <!--我的奖品--1等奖-->
+    <div id="deng1">
+        <img id="bg_1deng" src="images/bg_wdjp.jpg"/>
+        <img id="tk_1deng" src="images/1deng.jpg" />
+        <img id="ljfs_1deng" src="images/ljfs1.png" />
+        <p id="dhm_1deng"></p>
+        <img id="btn_return1" src="images/btn_return.jpg" onclick="replay()"/>
+    </div>
+
+    <!--我的奖品--2等奖-->
+    <div id="deng2">
+        <img id="bg_2deng" src="images/bg_wdjp.jpg"/>
+        <img id="tk_2deng" src="images/2deng.jpg" />
+        <img id="ljfs_2deng" src="images/ljfs1.png" />
+        <p id="dhm_2deng"></p>
+        <img id="btn_return2" src="images/btn_return.jpg" onclick="replay()"/>
+    </div>
+
+    <!--我的奖品--3等奖-->
+    <div id="deng3">
+        <img id="bg_3deng" src="images/bg_wdjp.jpg"/>
+        <img id="tk_3deng" src="images/3deng.jpg" />
+        <img id="ljfs_3deng" src="images/ljfs1.png" />
+        <p id="dhm_3deng"></p>
+        <img id="btn_return3" src="images/btn_return.jpg" onclick="replay()"/>
+    </div>
+
+    <!--我的奖品--4等奖-->
+    <div id="deng4">
+        <img id="bg_4deng" src="images/bg_wdjp.jpg"/>
+        <img id="tk_4deng" src="images/4deng.jpg" />
+        <img id="ljfs_4deng" src="images/ljfs1.png" />
+        <p id="dhm_4deng"></p>
+        <img id="btn_return4" src="images/btn_return.jpg" onclick="replay()"/>
+    </div>
+
+    <!--我的奖品--5等奖-->
+    <div id="deng5">
+        <img id="bg_5deng" src="images/bg_wdjp.jpg"/>
+        <img id="tk_5deng" src="images/5deng.jpg" />
+        <img id="ljfs_5deng" src="images/ljfs1.png" />
+        <p id="dhm_5deng"></p>
+        <img id="btn_return5" src="images/btn_return.jpg" onclick="replay()"/>
+    </div>
+
+    <!--分享页面--村花4-->
+    <div id="cunhua">
+        <img id="bg_cunhua" src="images/bg_cunhua.jpg"/>
+        <p id="dhm_cunhua"></p>
+    </div>
+
+    <!--分享页面--凤姐2-->
+    <div id="fengjie">
+        <img id="bg_fengjie" src="images/bg_fengjie.jpg"/>
+        <p id="dhm_fengjie"></p>
+    </div>
+
+    <!--分享页面--龙女（包子）3-->
+    <div id="longnv">
+        <img id="bg_longnv" src="images/bg_longnv.jpg"/>
+        <p id="dhm_longnv"></p>
+    </div>
+
+    <!--分享页面-如花1-->
+    <div id="ruhua">
+        <img id="bg_ruhua" src="images/bg_ruhua.jpg"/>
+        <p id="dhm_ruhua"></p>
+    </div>
+
+    <!--分享页面-女神5-->
+    <div id="nvshen">
+        <img id="bg_nvshen" src="images/bg_nvshen.jpg"/>
+        <p id="dhm_nvshen"></p>
+    </div>
+    <script type="text/javascript">
+        function replay() {
+            window.location.href="./index.html";
+
+        }
+
+    </script>
+
+
+    <script src="js/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="js/js.js"></script>
+
+</body>
+</html>

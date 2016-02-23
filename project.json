@@ -1,0 +1,17 @@
+{
+    "debugMode"     : 1,
+    "showFPS" : true,
+    "frameRate"     : 60,
+    "id"            : "gameCanvas",
+    "renderMode"    : 1,
+    "jsList"        : [
+        "src/resource.js",
+        "src/MyLoaderScene.js",
+        "src/globals.js",
+        "src/Online.js",
+        "src/GameStart.js",
+        "src/GameMain.js",
+        "src/GameOverB.js",
+        "src/GameOver.js"
+    ]
+}
